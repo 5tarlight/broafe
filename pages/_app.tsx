@@ -1,6 +1,16 @@
-import '@/styles/globals.css'
-import type { AppProps } from 'next/app'
+import { theme } from "@/styles/theme";
+import type { AppProps } from "next/app";
+import { ThemeProvider } from "styled-components";
+import GlobalStyle from "../styles/globalStyles";
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+  return (
+    <>
+      {/* TODO : Theme selection */}
+      <ThemeProvider theme={theme.white}>
+        <GlobalStyle />
+        <Component {...pageProps} />
+      </ThemeProvider>
+    </>
+  );
 }
