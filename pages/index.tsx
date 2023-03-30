@@ -1,7 +1,15 @@
+import Header from "@/components/header/Header";
 import { NextPage } from "next";
+import Head from "next/head";
 
 const Index: NextPage = () => {
-  return <h1>Hello World</h1>;
+  return (
+    <>
+      <Head>
+        <title>Boafe</title>
+      </Head>
+    </>
+  );
 };
 
 export default Index;
