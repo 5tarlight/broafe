@@ -1,4 +1,6 @@
 import {
+  IndexLetsGoButtonStyle,
+  IndexLetsGoContainerStyle,
   IndexMainContainerStyle,
   IndexMainTitleStyle,
   IndexSubTitleStyle,
@@ -35,6 +37,10 @@ const Index: NextPage = () => {
           간단하게 만들 수 있고 트수라면 좋아하는 스트리머의 공간에 바로 접근할
           수 있습니다.
         </IndexSubTitleStyle>
+
+        <IndexLetsGoContainerStyle>
+          <IndexLetsGoButtonStyle>Twitch로 시작하기</IndexLetsGoButtonStyle>
+        </IndexLetsGoContainerStyle>
       </IndexMainContainerStyle>
     </>
   );
