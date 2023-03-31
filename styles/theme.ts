@@ -10,6 +10,7 @@ export interface Theme extends DefaultTheme {
 
     dark0: string;
     dark1: string;
+    dark2: string;
   };
 }
 
@@ -27,6 +28,7 @@ export const theme: ThemeGroup = {
       pri1: "#ba67eb",
       dark0: "#e3e3e3",
       dark1: "#d4d4d4",
+      dark2: "#c2c2c2",
     },
   },
   // TODO : Dark theme!
@@ -38,6 +40,7 @@ export const theme: ThemeGroup = {
       pri1: "#b640d6",
       dark0: "#e3e3e3",
       dark1: "#d4d4d4",
+      dark2: "#c2c2c2",
     },
   },
 };

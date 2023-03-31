@@ -67,4 +67,16 @@ export const HeaderSearchBtnStyle = styled.button`
   padding: 0 5px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  display: block;
+
+  &:hover {
+    cursor: pointer;
+    background-color: ${({ theme }: { theme: Theme }) => theme.colors.dark2};
+  }
+`;
+
+export const HeaderSearchBtnSvgStyle = styled.svg`
+  display: block;
+  margin-top: 5px;
+  margin-left: 7px;
 `;
