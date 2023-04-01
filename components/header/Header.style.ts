@@ -103,6 +103,7 @@ export const HeaderThemePolygonStyle = styled.polygon`
 
 export const HeaderThemeSpanStyle = styled.span`
   font-size: 0.95rem;
+  user-select: none;
 `;
 
 export const HeaderThemeDropdownContainerStyle = styled.div`
@@ -111,7 +112,8 @@ export const HeaderThemeDropdownContainerStyle = styled.div`
   background-color: ${({ theme }) => theme.colors.background};
   margin-top: -5px;
   border: 1px solid ${({ theme }) => theme.colors.dark1};
-  display: flex;
+  /* display: flex; */
+  display: none;
   flex-direction: column;
   user-select: none;
   width: 10rem;
