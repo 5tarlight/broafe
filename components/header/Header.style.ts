@@ -86,3 +86,54 @@ export const HeaderSearchBtnSvgStyle = styled.svg`
   margin-top: 5px;
   margin-left: 7px;
 `;
+
+export const HeaderThemeSelectorContainerStyle = styled.div`
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const HeaderThemeTriSvgStyle = styled.svg`
+  margin-top: 2px;
+`;
+
+export const HeaderThemePolygonStyle = styled.polygon`
+  fill: ${({ theme }: { theme: Theme }) => theme.colors.text};
+`;
+
+export const HeaderThemeSpanStyle = styled.span`
+  font-size: 0.95rem;
+`;
+
+export const HeaderThemeDropdownContainerStyle = styled.div`
+  position: fixed;
+  z-index: 1000;
+  background-color: ${({ theme }) => theme.colors.background};
+  margin-top: -5px;
+  border: 1px solid ${({ theme }) => theme.colors.dark1};
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  width: 10rem;
+  border-radius: 8px;
+
+  & :first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  & :last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+`;
+
+export const HeaderThemeDropdownItem = styled.span`
+  display: block;
+  padding: 2px 4px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: ${({ theme }) => theme.colors.dark0};
+  }
+`;

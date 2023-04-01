@@ -7,6 +7,7 @@ import {
   HeaderStyle,
 } from "./Header.style";
 import HeaderInput from "./HeaderInput";
+import ThemeSelector from "./ThemeSelector";
 
 interface Props {}
 
@@ -18,6 +19,7 @@ const Header: NextPage<Props> = () => {
       </HeaderLogoStyle>
       <HeaderInput />
       <HeaderMenuStyle>
+        <ThemeSelector />
         <div>div1</div>
         <div>div2</div>
       </HeaderMenuStyle>
