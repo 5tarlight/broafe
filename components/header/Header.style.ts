@@ -4,11 +4,16 @@ import styled from "styled-components";
 export const HeaderStyle = styled.header`
   width: 100%;
   display: flex;
-  box-shadow: 0px 0.6px 2.2px rgba(0, 0, 0, 0.02),
-    0px 1.4px 5.3px rgba(0, 0, 0, 0.028), 0px 2.6px 10px rgba(0, 0, 0, 0.035),
-    0px 4.7px 17.9px rgba(0, 0, 0, 0.042), 0px 8.8px 33.4px rgba(0, 0, 0, 0.05),
-    0px 21px 80px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 0.7px 2.2px rgba(0, 0, 0, 0.02),
+    0px 1.6px 5.3px rgba(0, 0, 0, 0.028), 0px 3px 10px rgba(0, 0, 0, 0.035),
+    0px 5.4px 17.9px rgba(0, 0, 0, 0.042), 0px 10px 33.4px rgba(0, 0, 0, 0.05),
+    0px 24px 80px rgba(0, 0, 0, 0.07);
   justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: ${({ theme }) => theme.colors.background};
 
   height: 4rem;
   line-height: calc(4rem / 2);

@@ -35,12 +35,7 @@ const Index: NextPage = () => {
           </svg>
         </IndexPlatformLogoStyle> */}
         <IndexSubTitleStyle>
-          스트리머와 트수들을 위한 전용 공간 Boafe에 어서오세요!
-          <br />
-          Boafe에서는 좋아하는 스트리머와, 스트리머를 좋아하는 사람들과 만날 수
-          있습니다. 스트리머라면 다양한 옵션을 제공하는 개성넘치는 공간을
-          간단하게 만들 수 있고 트수라면 좋아하는 스트리머의 공간에 바로 접근할
-          수 있습니다.
+          지금 바로 자신만의 공간을 만들어보세요.
         </IndexSubTitleStyle>
 
         <IndexLetsGoContainerStyle>
