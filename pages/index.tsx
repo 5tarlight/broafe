@@ -1,9 +1,14 @@
 import {
+  IndexDescriptionContainerStyle,
+  IndexDescriptionItemStyle,
+  IndexDescriptionLargeStyle,
+  IndexDescriptionSmallStyle,
   IndexLetsGoButtonStyle,
   IndexLetsGoContainerStyle,
   IndexMainContainerStyle,
   IndexMainTitleStyle,
   IndexSubTitleStyle,
+  IndexTestBox,
 } from "@/components/index/index.style";
 import { NextPage } from "next";
 import Head from "next/head";
@@ -39,9 +44,30 @@ const Index: NextPage = () => {
         </IndexSubTitleStyle>
 
         <IndexLetsGoContainerStyle>
+          {/* // TODO : Mouse hover animation more dynamically! */}
+          {/* // https://developer.mozilla.org/en-US/docs/Web/CSS/clip-path */}
           <IndexLetsGoButtonStyle>Twitch로 시작하기</IndexLetsGoButtonStyle>
         </IndexLetsGoContainerStyle>
       </IndexMainContainerStyle>
+      <IndexDescriptionContainerStyle>
+        <IndexDescriptionItemStyle>
+          <IndexDescriptionSmallStyle>
+            <IndexTestBox />
+          </IndexDescriptionSmallStyle>
+          <IndexDescriptionLargeStyle>
+            자신을 위한, 자신을 좋아해주는 사람을 위한 공간을 지금 만들어보세요.
+          </IndexDescriptionLargeStyle>
+        </IndexDescriptionItemStyle>
+        <IndexDescriptionItemStyle>
+          <IndexDescriptionLargeStyle>
+            모든 것을 마음대로 바꿀 수 있습니다. 개성넘치는 공간을 지금
+            만들어보세요.
+          </IndexDescriptionLargeStyle>
+          <IndexDescriptionSmallStyle>
+            <IndexTestBox />
+          </IndexDescriptionSmallStyle>
+        </IndexDescriptionItemStyle>
+      </IndexDescriptionContainerStyle>
     </>
   );
 };
