@@ -25,6 +25,10 @@ const ThemeSelector: NextPage<Props> = () => {
       onClick={(e) => {
         setShow(!show);
       }}
+      onBlur={(e) => {
+        setShow(false);
+      }}
+      tabIndex={0}
     >
       <HeaderThemeSpanStyle>테마</HeaderThemeSpanStyle>
       <HeaderThemeTriSvgStyle height={13} width={16}>
