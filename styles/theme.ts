@@ -3,7 +3,7 @@ import { DefaultTheme } from "styled-components";
 export interface Theme extends DefaultTheme {
   colors: {
     text: string;
-    base: string;
+    background: string;
 
     pri0: string;
     pri1: string;
@@ -47,7 +47,7 @@ export const theme: ThemeGroup = {
   white: {
     colors: {
       text: "#000000",
-      base: "#ffffff",
+      background: "#ffffff",
       pri0: "#cc73ff",
       pri1: "#ba67eb",
       dark0: "#e3e3e3",
@@ -61,7 +61,7 @@ export const theme: ThemeGroup = {
   black: {
     colors: {
       text: "#ffffff",
-      base: "#000000",
+      background: "#000000",
       pri0: "#c751e8",
       pri1: "#b640d6",
       dark0: "#e3e3e3",

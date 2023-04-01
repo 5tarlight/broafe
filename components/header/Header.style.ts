@@ -57,7 +57,8 @@ export const HeaderInputStyle = styled.input`
 `;
 
 export const HeaderSearchSplitter = styled.div`
-  border: 0.5px solid ${({ theme }: { theme: Theme }) => theme.colors.base};
+  border: 0.5px solid
+    ${({ theme }: { theme: Theme }) => theme.colors.background};
 `;
 
 export const HeaderSearchBtnStyle = styled.button`
