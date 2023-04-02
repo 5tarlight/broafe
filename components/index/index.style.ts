@@ -65,6 +65,10 @@ export const IndexDescriptionItemStyle = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     padding: 0 1rem;
+
+    & :first-child {
+      margin-bottom: 1rem;
+    }
   }
 `;
 

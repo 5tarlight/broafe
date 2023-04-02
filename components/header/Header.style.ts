@@ -4,11 +4,16 @@ import styled from "styled-components";
 export const HeaderStyle = styled.header`
   width: 100%;
   display: flex;
-  box-shadow: 0px 0.6px 2.2px rgba(0, 0, 0, 0.02),
-    0px 1.4px 5.3px rgba(0, 0, 0, 0.028), 0px 2.6px 10px rgba(0, 0, 0, 0.035),
-    0px 4.7px 17.9px rgba(0, 0, 0, 0.042), 0px 8.8px 33.4px rgba(0, 0, 0, 0.05),
-    0px 21px 80px rgba(0, 0, 0, 0.07);
+  box-shadow: 0px 0.7px 2.2px rgba(0, 0, 0, 0.02),
+    0px 1.6px 5.3px rgba(0, 0, 0, 0.028), 0px 3px 10px rgba(0, 0, 0, 0.035),
+    0px 5.4px 17.9px rgba(0, 0, 0, 0.042), 0px 10px 33.4px rgba(0, 0, 0, 0.05),
+    0px 24px 80px rgba(0, 0, 0, 0.07);
   justify-content: space-between;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: ${({ theme }) => theme.colors.background};
 
   height: 4rem;
   line-height: calc(4rem / 2);
@@ -57,7 +62,8 @@ export const HeaderInputStyle = styled.input`
 `;
 
 export const HeaderSearchSplitter = styled.div`
-  border: 0.5px solid ${({ theme }: { theme: Theme }) => theme.colors.base};
+  border: 0.5px solid
+    ${({ theme }: { theme: Theme }) => theme.colors.background};
 `;
 
 export const HeaderSearchBtnStyle = styled.button`
@@ -79,4 +85,57 @@ export const HeaderSearchBtnSvgStyle = styled.svg`
   display: block;
   margin-top: 5px;
   margin-left: 7px;
+`;
+
+export const HeaderThemeSelectorContainerStyle = styled.div`
+  &:hover {
+    cursor: pointer;
+  }
+`;
+
+export const HeaderThemeTriSvgStyle = styled.svg`
+  margin-top: 2px;
+`;
+
+export const HeaderThemePolygonStyle = styled.polygon`
+  fill: ${({ theme }: { theme: Theme }) => theme.colors.text};
+`;
+
+export const HeaderThemeSpanStyle = styled.span`
+  font-size: 0.95rem;
+  user-select: none;
+`;
+
+export const HeaderThemeDropdownContainerStyle = styled.div`
+  position: fixed;
+  z-index: 1000;
+  background-color: ${({ theme }) => theme.colors.background};
+  margin-top: -5px;
+  border: 1px solid ${({ theme }) => theme.colors.dark1};
+  /* display: flex; */
+  display: none;
+  flex-direction: column;
+  user-select: none;
+  width: 10rem;
+  border-radius: 8px;
+
+  & :first-child {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+
+  & :last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+`;
+
+export const HeaderThemeDropdownItem = styled.span`
+  display: block;
+  padding: 2px 4px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: ${({ theme }) => theme.colors.dark0};
+  }
 `;
