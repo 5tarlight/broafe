@@ -21,7 +21,7 @@ export interface Theme extends DefaultTheme {
    * This function donesn't create color which is fit to dark or white theme.
    * It will simply reverse everything.
    * This process is recommended for only white-black convertion or
-   * code fo `r`, `g`, `b` is all same. It not, this may cause unexpected color.
+   * code fo `r`, `g`, `b` is all same. If not, this may cause unexpected color.
    *
    * @param color Original color which will be reversed. With `#abcdef`.
    * @returns Reversed hex color code. `#543210`
