@@ -52,13 +52,17 @@ export const HeaderInputContainerStyle = styled.div`
 export const HeaderInputStyle = styled.input`
   border: none;
   outline: none;
-  width: 12rem;
+  width: 24rem;
   height: 100%;
   padding: 1rem;
   background-color: ${({ theme }: { theme: Theme }) => theme.colors.dark0};
   border-radius: 0;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
+
+  @media (max-width: 768px) {
+    width: 12rem;
+  }
 `;
 
 export const HeaderSearchSplitter = styled.div`

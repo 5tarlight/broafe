@@ -11,6 +11,10 @@ export interface Theme extends DefaultTheme {
     dark0: string;
     dark1: string;
     dark2: string;
+    dark3: string;
+    dark4: string;
+    dark5: string;
+    dark6: string;
   };
 
   /**
@@ -53,6 +57,10 @@ export const theme: ThemeGroup = {
       dark0: "#e3e3e3",
       dark1: "#d4d4d4",
       dark2: "#c2c2c2",
+      dark4: "#9e9e9e",
+      dark3: "#999999",
+      dark5: "#737373",
+      dark6: "#4d4d4d",
     },
 
     reverse,
@@ -67,6 +75,10 @@ export const theme: ThemeGroup = {
       dark0: "#e3e3e3",
       dark1: "#d4d4d4",
       dark2: "#c2c2c2",
+      dark3: "#999999",
+      dark4: "#9e9e9e",
+      dark5: "#737373",
+      dark6: "#4d4d4d",
     },
 
     reverse,

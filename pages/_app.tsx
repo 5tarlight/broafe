@@ -4,6 +4,7 @@ import { theme } from "@/styles/theme";
 import type { AppProps } from "next/app";
 import { ThemeProvider } from "styled-components";
 import GlobalStyle from "../styles/globalStyles";
+import Footer from "@/components/footer/Footer";
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
@@ -15,6 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <MainDiv>
           <Component {...pageProps} />
         </MainDiv>
+        <Footer />
       </ThemeProvider>
     </>
   );
